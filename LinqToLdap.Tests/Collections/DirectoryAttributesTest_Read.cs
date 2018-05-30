@@ -52,7 +52,7 @@ namespace LinqToLdap.Tests.Collections
             _collection
                 .Call("Add", new object[] { "Property10", new DirectoryAttribute("Property10", _byteArrays) });
             _collection
-                .Call("Add", new object[] { "Property11", new DirectoryAttribute("Property10", Properties.Resources.cert) });
+                .Call("Add", new object[] { "Property11", new DirectoryAttribute("Property10", Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer")) });
 
             _entry =
                 typeof(SearchResultEntry).Create<SearchResultEntry>(
@@ -399,7 +399,7 @@ namespace LinqToLdap.Tests.Collections
         [TestMethod]
         public void GetX509Certificate_ExistsAndCorrectType_ReturnsX509Certificate()
         {
-            _attributes.GetX509Certificate("property11").Should().Be.EqualTo(new X509Certificate(Properties.Resources.cert));
+            _attributes.GetX509Certificate("property11").Should().Be.EqualTo(new X509Certificate(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer")));
         }
 
         [TestMethod]
@@ -411,7 +411,7 @@ namespace LinqToLdap.Tests.Collections
         [TestMethod]
         public void GetX509Certificate2_ExistsAndCorrectType_ReturnsX509Certificate2()
         {
-            _attributes.GetX509Certificate2("property11").Should().Be.EqualTo(new X509Certificate2(Properties.Resources.cert));
+            _attributes.GetX509Certificate2("property11").Should().Be.EqualTo(new X509Certificate2(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer")));
         }
 
         [TestMethod]
@@ -423,7 +423,7 @@ namespace LinqToLdap.Tests.Collections
         [TestMethod]
         public void GetX509Certificates_ExistsAndCorrectType_ReturnsListOfX509Certificates()
         {
-            _attributes.GetX509Certificates("property11").Should().Have.SameSequenceAs(new[] { new X509Certificate(Properties.Resources.cert) });
+            _attributes.GetX509Certificates("property11").Should().Have.SameSequenceAs(new[] { new X509Certificate(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer")) });
         }
 
         [TestMethod]
@@ -435,7 +435,7 @@ namespace LinqToLdap.Tests.Collections
         [TestMethod]
         public void GetX509Certificate2s_ExistsAndCorrectType_ReturnsListOfX509Certificates()
         {
-            _attributes.GetX509Certificate2s("property11").Should().Have.SameSequenceAs(new[] { new X509Certificate2(Properties.Resources.cert) });
+            _attributes.GetX509Certificate2s("property11").Should().Have.SameSequenceAs(new[] { new X509Certificate2(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer")) });
         }
 
         [TestMethod]

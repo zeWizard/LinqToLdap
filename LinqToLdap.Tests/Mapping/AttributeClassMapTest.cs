@@ -83,7 +83,7 @@ namespace LinqToLdap.Tests.Mapping
 // ReSharper disable CSharpWarnings::CS0108
 // ReSharper disable UnusedMember.Global
 // ReSharper disable UnusedAutoPropertyAccessor.Local
-        protected string[] Property4 { get; private set; }
+        protected new string[] Property4 { get; private set; }
 // ReSharper restore UnusedAutoPropertyAccessor.Local
 // ReSharper restore UnusedMember.Global
 // ReSharper restore CSharpWarnings::CS0108

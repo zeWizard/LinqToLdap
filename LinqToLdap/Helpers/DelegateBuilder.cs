@@ -80,8 +80,13 @@ namespace LinqToLdap.Helpers
                 };
             }
 
-            var dyn = new DynamicMethod("ctorWrapper", MethodAttributes.Static | MethodAttributes.Public,
-                CallingConventions.Standard, typeof(T), Type.EmptyTypes, concreteType, true);
+            var dyn = new DynamicMethod(
+                "ctorWrapper", 
+                MethodAttributes.Static | MethodAttributes.Public,
+                CallingConventions.Standard, 
+                typeof(T), 
+                Type.EmptyTypes, 
+                concreteType, true);
             ILGenerator il = dyn.GetILGenerator();
             il.Emit(OpCodes.Newobj, ctor);
             il.Emit(OpCodes.Ret);

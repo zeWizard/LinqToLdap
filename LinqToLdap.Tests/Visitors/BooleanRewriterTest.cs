@@ -64,7 +64,7 @@ namespace LinqToLdap.Tests.Visitors
         {
             //prepare
             DateTime? now = DateTime.Now;
-            _queryContext.Query<BooleanRewriterTest>().Where(e => (e.Property2 == "test") || (e.Property1 == now.Value && now.HasValue is bool && (bool)(now.HasValue as object) == true));
+            _queryContext.Query<BooleanRewriterTest>().Where(e => (e.Property2 == "test") || (e.Property1 == now.Value && now.HasValue && (bool)(now.HasValue as object) == true));
             var expression1 = _queryContext.ActiveProvider.CurrentExpression;
 
             _queryContext.Query<BooleanRewriterTest>().Where(e => e.Property2 == "test" || (e.Property1 == now.Value && true && true));

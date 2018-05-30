@@ -195,7 +195,7 @@ namespace LinqToLdap.Tests.Extensions
         [TestMethod]
         public void ToDirectoryModification_X509Certificate_ReturnsCorrectAttribute()
         {
-            var cert = new X509Certificate(Properties.Resources.cert);
+            var cert = new X509Certificate(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer"));
 
             var modification = cert.ToDirectoryModification("x", DirectoryAttributeOperation.Replace);
 
@@ -208,7 +208,7 @@ namespace LinqToLdap.Tests.Extensions
         [TestMethod]
         public void ToDirectoryModification_X509Certificate2_ReturnsCorrectAttribute()
         {
-            var cert = new X509Certificate2(Properties.Resources.cert);
+            var cert = new X509Certificate2(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer"));
 
             var modification = cert.ToDirectoryModification("x", DirectoryAttributeOperation.Replace);
 
@@ -221,7 +221,7 @@ namespace LinqToLdap.Tests.Extensions
         [TestMethod]
         public void ToDirectoryModification_EnumerableX509Certificate_ReturnsCorrectAttribute()
         {
-            var cert = new[] { new X509Certificate(Properties.Resources.cert), new X509Certificate(Properties.Resources.cert) };
+            var cert = new[] { new X509Certificate(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer")), new X509Certificate(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer")) };
 
             var modification = cert.ToDirectoryModification("x", DirectoryAttributeOperation.Replace);
 
@@ -235,7 +235,7 @@ namespace LinqToLdap.Tests.Extensions
         [TestMethod]
         public void ToDirectoryModification_EnumerableX509Certificate2_ReturnsCorrectAttribute()
         {
-            var cert = new[] { new X509Certificate2(Properties.Resources.cert), new X509Certificate2(Properties.Resources.cert) };
+            var cert = new[] { new X509Certificate2(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer")), new X509Certificate2(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer")) };
 
             var modification = cert.ToDirectoryModification("x", DirectoryAttributeOperation.Replace);
 

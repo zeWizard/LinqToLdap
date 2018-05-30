@@ -17,8 +17,8 @@ namespace LinqToLdap.Tests.Mapping.PropertyMappings
         [TestInitialize]
         public void SetUp()
         {
-            _certificate = new X509Certificate2(Properties.Resources.cert);
-            _certificate2 = new X509Certificate2(Properties.Resources.cert2);
+            _certificate = new X509Certificate2(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer"));
+            _certificate2 = new X509Certificate2(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer2"));
             
             _mappingArguments = new PropertyMappingArguments<X509Certificate2PropertyMappingTest>
             {
@@ -103,7 +103,7 @@ namespace LinqToLdap.Tests.Mapping.PropertyMappings
         public void IsEqual_SameCertificates_ReturnsTrue()
         {
             //prepare
-            _mappingArguments.Getter = t => new X509Certificate2(Properties.Resources.cert);
+            _mappingArguments.Getter = t => new X509Certificate2(Resources.ResourceHelper.GetAssemblyResource(@"Resources\cert.cer"));
             var propertyMapping = new X509Certificate2PropertyMapping<X509Certificate2PropertyMappingTest>(_mappingArguments);
             DirectoryAttributeModification modification;
             //act
