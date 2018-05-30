@@ -6,8 +6,8 @@
         <title>LINQ to LDAP - .NET Standard</title>
         <authors>Alan Hatter</authors>
         <owners>Alan Hatter</owners>
-        <licenseUrl>http://linqtoldap.codeplex.com/license</licenseUrl>
-        <projectUrl>http://linqtoldap.codeplex.com/</projectUrl>
+        <licenseUrl>https://github.com/zeWizard/LinqToLdap/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/zeWizard/LinqToLdap/</projectUrl>
         <iconUrl>http://3.bp.blogspot.com/-tQ7UObq7UQw/Ultls-7CI7I/AAAAAAAAAnM/5OEMj40RXbw/s200/linqtoldap_logo_small.png</iconUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <description>.NET Standard Port of Mad Hatter's brilliant LINQ provider built on top of System.DirectoryServices.Protocols for querying and updating LDAP servers.</description>
@@ -18,11 +18,6 @@
         <copyright />
         <language>en-US</language>
         <tags>LINQ LDAP AD active directory openldap tivoli</tags>
-        <frameworkAssemblies>
-            <frameworkAssembly assemblyName="System" targetFramework="" />
-            <frameworkAssembly assemblyName="System.Core" targetFramework="" />
-            <frameworkAssembly assemblyName="System.DirectoryServices.Protocols" targetFramework="" />
-        </frameworkAssemblies>
         <dependencies>
           <dependency id="FastExpressionCompiler" version="1.7.1"  />
           <dependency id="Microsoft.Windows.Compatibility" version="2.0.0"  />
@@ -30,14 +25,14 @@
         </dependencies>
     </metadata>
     <files>
-      <file src="bin\Release\AppLogger.dll" target="lib\netstandard1.4\LinqToLdap.dll" />
-      <file src="bin\Release\AppLogger.xml" target="lib\netstandard1.4\LinqToLdap.xml" />
-      <file src="bin\Release\AppLogger.dll" target="lib\netstandard2.0\LinqToLdap.dll" />
-      <file src="bin\Release\AppLogger.xml" target="lib\netstandard2.0\LinqToLdap.xml" />
-      <file src="bin\Release\AppLogger.dll" target="lib\net45\LinqToLdap.dll" />
-      <file src="bin\Release\AppLogger.xml" target="lib\net45\LinqToLdap.xml" />
-      <file src="bin\Release\AppLogger.dll" target="lib\net46\LinqToLdap.dll" />
-      <file src="bin\Release\AppLogger.xml" target="lib\net46\LinqToLdap.xml" />
+      <file src="bin\Release\netstandard2.0\LinqToLdap.dll" target="lib\netstandard1.4\LinqToLdap.dll" />
+      <file src="bin\Release\netstandard2.0\LinqToLdap.xml" target="lib\netstandard1.4\LinqToLdap.xml" />
+      <file src="bin\Release\netstandard2.0\LinqToLdap.dll" target="lib\netstandard2.0\LinqToLdap.dll" />
+      <file src="bin\Release\netstandard2.0\LinqToLdap.xml" target="lib\netstandard2.0\LinqToLdap.xml" />
+      <file src="bin\Release\netstandard2.0\LinqToLdap.dll" target="lib\net45\LinqToLdap.dll" />
+      <file src="bin\Release\netstandard2.0\LinqToLdap.xml" target="lib\net45\LinqToLdap.xml" />
+      <file src="bin\Release\netstandard2.0\LinqToLdap.dll" target="lib\net46\LinqToLdap.dll" />
+      <file src="bin\Release\netstandard2.0\LinqToLdap.xml" target="lib\net46\LinqToLdap.xml" />
     </files>
   
 </package>
