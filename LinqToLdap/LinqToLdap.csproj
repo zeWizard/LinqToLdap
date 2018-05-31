@@ -10,13 +10,14 @@
     <PackageProjectUrl>https://github.com/madhatter22/LinqToLdap</PackageProjectUrl>
     <RepositoryUrl>https://github.com/madhatter22/LinqToLdap</RepositoryUrl>
     <PackageTags>LINQ LDAP AD active directory openldap tivoli</PackageTags>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
-    <FileVersion>5.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>linqtoldap.snk</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageId>LinqToLdap.NETStandard</PackageId>
+    <Version>1.0.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

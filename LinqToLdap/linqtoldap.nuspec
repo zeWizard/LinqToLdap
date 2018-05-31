@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>LinqToLdap.NETStandard</id>
-        <version>5.0.0</version>
+        <version>5.0.1</version>
         <title>LINQ to LDAP - .NET Standard</title>
         <authors>Alan Hatter</authors>
         <owners>Alan Hatter</owners>
@@ -34,5 +34,4 @@
       <file src="bin\Release\netstandard2.0\LinqToLdap.dll" target="lib\net46\LinqToLdap.dll" />
       <file src="bin\Release\netstandard2.0\LinqToLdap.xml" target="lib\net46\LinqToLdap.xml" />
     </files>
-  
 </package>
