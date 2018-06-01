@@ -20,6 +20,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>LinqToLdap.Contrib.NETStandard</PackageId>
   </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\LinqToLdap.Contrib.xml</DocumentationFile>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\LinqToLdap.Contrib.xml</DocumentationFile>
+  </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\LinqToLdap\LinqToLdap.csproj" />

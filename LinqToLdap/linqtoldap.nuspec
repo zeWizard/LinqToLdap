@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>LinqToLdap.NETStandard</id>
-        <version>5.0.1</version>
+        <version>5.0.4</version>
         <title>LINQ to LDAP - .NET Standard</title>
         <authors>Alan Hatter</authors>
         <owners>Alan Hatter</owners>
@@ -21,7 +21,7 @@
         <dependencies>
           <dependency id="FastExpressionCompiler" version="1.7.1"  />
           <dependency id="Microsoft.Windows.Compatibility" version="2.0.0"  />
-          <dependency id="System.Reflection.Emit.IL.Generation" version="4.3.0"  />
+          <dependency id="System.Reflection.Emit.ILGeneration" version="4.3.0"  />
         </dependencies>
     </metadata>
     <files>
@@ -33,5 +33,15 @@
       <file src="bin\Release\netstandard2.0\LinqToLdap.xml" target="lib\net45\LinqToLdap.xml" />
       <file src="bin\Release\netstandard2.0\LinqToLdap.dll" target="lib\net46\LinqToLdap.dll" />
       <file src="bin\Release\netstandard2.0\LinqToLdap.xml" target="lib\net46\LinqToLdap.xml" />
+
+      <file src="..\LinqToLdap.Contrib\bin\Release\netstandard2.0\LinqToLdap.Contrib.dll" target="lib\netstandard1.4\LinqToLdap.Contrib.dll" />
+      <file src="..\LinqToLdap.Contrib\bin\Release\netstandard2.0\LinqToLdap.Contrib.xml" target="lib\netstandard1.4\LinqToLdap.Contrib.xml" />
+      <file src="..\LinqToLdap.Contrib\bin\Release\netstandard2.0\LinqToLdap.Contrib.dll" target="lib\netstandard2.0\LinqToLdap.Contrib.dll" />
+      <file src="..\LinqToLdap.Contrib\bin\Release\netstandard2.0\LinqToLdap.Contrib.xml" target="lib\netstandard2.0\LinqToLdap.Contrib.xml" />
+      <file src="..\LinqToLdap.Contrib\bin\Release\netstandard2.0\LinqToLdap.Contrib.dll" target="lib\net45\LinqToLdap.Contrib.dll" />
+      <file src="..\LinqToLdap.Contrib\bin\Release\netstandard2.0\LinqToLdap.Contrib.xml" target="lib\net45\LinqToLdap.Contrib.xml" />
+      <file src="..\LinqToLdap.Contrib\bin\Release\netstandard2.0\LinqToLdap.Contrib.dll" target="lib\net46\LinqToLdap.Contrib.dll" />
+      <file src="..\LinqToLdap.Contrib\bin\Release\netstandard2.0\LinqToLdap.Contrib.xml" target="lib\net46\LinqToLdap.Contrib.xml" />
+      
     </files>
 </package>
